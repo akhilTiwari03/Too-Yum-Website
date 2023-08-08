@@ -19,10 +19,10 @@
 
    <section class="flex">
 
-      <a href="home.html" class="logo">Too YUM! 😍</a>
+      <a href="index.html" class="logo">Too YUM! 😍</a>
 
       <nav class="navbar">
-         <a href="home.html">Home</a>
+         <a href="index.html">Home</a>
          <a href="about.html">About</a>
          <a href="menu.html">Menu</a>
          <a href="orders.html">Orders</a>
@@ -51,24 +51,24 @@
 
 <div class="heading">
    <h3>Contact us</h3>
-   <p><a href="home.html">Home </a> <span> / Contact</span></p>
+   <p><a href="index.html">Home </a> <span> / Contact</span></p>
 </div>
 
 <section class="contact">
 
    <div class="row">
-
+ 
       <div class="image">
          <img src="images/contact-img.svg" alt="">
       </div>
 
-      <form action="" method="post">
+      <form location.href="contact.html" method="post" name="form">
          <h3>Tell us Something!</h3>
-         <input type="text" name="name" required placeholder="Enter your name" maxlength="50" class="box">
-         <input type="number" name="number" required placeholder="Enter your number" max="9999999999" min="0" class="box" onkeypress="if(this.value.length == 10) return false;">
-         <input type="email" name="email" required placeholder="Enter your email" maxlength="50" class="box">
-         <textarea name="msg" placeholder="Enter your message" required class="box" cols="30" rows="10" maxlength="500"></textarea>
-         <input type="submit" value="Send message" class="btn" name="send">
+         <input id="name" type="text" name="name" required placeholder="Enter your name" maxlength="50" class="box">
+         <input id="number" type="number" name="number" required placeholder="Enter your number" max="9999999999" min="0" class="box" onkeypress="if(this.value.length == 10) return false;">
+         <input id="email" type="email" name="email" required placeholder="Enter your email" maxlength="50" class="box">
+         <textarea id="msg" name="msg" placeholder="Enter your message" required class="box" cols="30" rows="10" maxlength="500"></textarea>
+         <input type="submit" value="Send message" class="btn" name="send"  onsubmit="abc()" >
       </form>
 
    </div>

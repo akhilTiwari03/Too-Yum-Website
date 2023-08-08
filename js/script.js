@@ -25,3 +25,17 @@ function fadeOut(){
 }
 
 window.onload = fadeOut;
+
+function abc() {
+   let name = document.getElementById('name').value;
+   let number = document.getElementById('number').innerHTML;
+   let email = document.getElementById('email').innerHTML;
+   let msg = document.getElementById('msg').innerHTML;
+   if(name !="" && number != null && email != null  && msg != null) {
+   
+      alert("Thanks for Contacting Us! We'll get back  to you shortly.");
+   }
+   else {
+      alert("Please Fill the complete details!");
+   }
+}
